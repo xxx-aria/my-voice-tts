@@ -106,7 +106,7 @@ def generate_audio(reference_audio, text: str, language: str):
         print(f"Reference audio: {reference_audio}")
         print(f"Output: {output_path}")
 
-        # В разных версиях TTS параметр split_sentences может вести себя по-разному.
+        # В разных версиях TTS параметр split_sentences может вести себя по-разному
         # Сначала пробуем с ним, если версия API не принимает — делаем fallback.
         try:
             model.tts_to_file(
